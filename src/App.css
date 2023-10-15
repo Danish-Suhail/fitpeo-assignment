@@ -36,32 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.pie-chart {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    transparent 0% 30%,    /* Blue */
-    #e74c3c 30% 60%,    /* Red */
-    #27ae60 60% 100%    /* Green */
-  );
-}
-
-.pie-ch {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #eebf16 0% 30%,    /* Blue */
-    transparent 30% 60%,    /* Red */
-    transparent 60% 100%    /* Green */
-  );
-}
-
-.pie {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #FFF
-}
