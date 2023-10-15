@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import BarGraph from './components/BarGraph';
+import Home from './components/Home';
+import Grids from './components/Grids';
+import ProductSell from './components/ProductSell';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-slate-100 flex w-full justify-center mx-auto">
+      <div className=' bg-[#00004d] sticky lg:w-1/6 hidden lg:block h-[100vh] top-0 left-0'>
+        <Dashboard/>
+      </div>
+      <div className='w-5/6'>
+      <Home />
+      <Grids />
+      <BarGraph />
+      <ProductSell />
+      </div>
     </div>
   );
-}
+};
+
 
 export default App;
